@@ -1,12 +1,8 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 
-def init_driver(browser, headless):
+def init_driver(browser):
     if browser == 'chrome':
-        options = Options()
-        options.headless = headless
-        return webdriver.Chrome(options=options)
+        return webdriver.Chrome()
     elif browser == 'firefox':
-        # Implementar para Firefox
-        pass
+        return webdriver.Firefox()
