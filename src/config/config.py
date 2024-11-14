@@ -6,4 +6,4 @@ BROWSER = 'firefox'
 
 # Parámetros de ejecución
 TEST_SUITE = 'test_suite.py'
-TEST_CASES = ['test_case.py']
+TEST_CASES = ['tst_uatx_demo', 'tst_uatx_siia_registration']
