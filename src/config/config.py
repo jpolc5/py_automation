@@ -1,7 +1,7 @@
 import os
 
 # Variables de entorno
-BASE_URL = 'https://google.com'
+BASE_URL = 'https://uatx.mx'
 BROWSER = 'firefox'
 
 # Parámetros de ejecución

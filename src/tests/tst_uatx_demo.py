@@ -16,19 +16,20 @@ class TestCase:
 
     def test_steps(self):
         #start to find first element in google main page, text area search
-        caja_busqueda = self.page_object.get_element('//textarea[@id="APjFqb"]')
+        #caja_busqueda = self.page_object.get_element('//textarea[@id="APjFqb"]')
         #in caja_busqueda typing 'uatx' word
-        caja_busqueda.send_keys('uatx')
+        #caja_busqueda.send_keys('uatx')
         # send a return or 'enter' keystroke
-        caja_busqueda.send_keys(Keys.RETURN)
+        #caja_busqueda.send_keys(Keys.RETURN)
         # this is for an amount time necesary for page load info
-        self.driver.implicitly_wait(10)
-        uatx_element = self.page_object.get_element("//A[contains(@href, 'https://uatx.mx')]")
-        uatx_element.click()
-
+        #self.driver.implicitly_wait(20)
+        #uatx_element = self.page_object.get_element("//a[contains(@href, 'https://uatx.mx')]")
+        #uatx_element.click()
         menu_uatx = self.page_object.get_element("//a[@class='dropdown-toggle active' and text()='Oferta Académica']")
         menu_uatx.click()
         lic_menu_uatx = self.page_object.get_element("//a[@href='/oferta/licenciaturas/']")
         lic_menu_uatx.click()
         lic_compu_link = self.page_object.get_element("//a[@href='/oferta/licenciaturas/ingenieriacomputacion']")
         lic_compu_link.click()
+
+
